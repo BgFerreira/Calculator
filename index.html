@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/sheetstyle.css">
+</head>
+
+<body>
+    <main>
+        <div id="display">0</div>
+
+        <div class="line" style="justify-content: flex-start;">
+            <input class="button" type="button" value="C" onclick="eraseCalculator()">
+        </div>
+
+        <div class="line">
+            <input class="button" type="button" value="7" onclick="writeOnDisplay('7')">
+            <input class="button" type="button" value="8" onclick="writeOnDisplay('8')">
+            <input class="button" type="button" value="9" onclick="writeOnDisplay('9')">
+            <input class="button" type="button" value="/" onclick="chooseOperation('/')">
+        </div>
+
+        <div class="line">
+            <input class="button" type="button" value="4" onclick="writeOnDisplay('4')">
+            <input class="button" type="button" value="5" onclick="writeOnDisplay('5')">
+            <input class="button" type="button" value="6" onclick="writeOnDisplay('6')">
+            <input class="button" type="button" value="x" onclick="chooseOperation('*')">
+        </div>
+
+        <div class="line">
+            <input class="button" type="button" value="1" onclick="writeOnDisplay('1')">
+            <input class="button" type="button" value="2" onclick="writeOnDisplay('2')">
+            <input class="button" type="button" value="3" onclick="writeOnDisplay('3')">
+            <input class="button" type="button" value="-" onclick="chooseOperation('-')">
+        </div>
+
+        <div class="line">
+            <input class="button" type="button" value="0" onclick="writeOnDisplay('0')">
+            <input class="button" type="button" value="." onclick="writeOnDisplay('.')">
+            <input class="button" type="button" value="+" onclick="chooseOperation('+')">
+            <input class="button" type="button" value="=" onclick="letCalculate()">
+        </div>
+    </main>
+</body>
+
+<script src="assets/script.js"></script>
+
+</html>
